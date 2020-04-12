@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Booking Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="Bookingdone.html">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="Address">Address</label>
+    <input type="text" id="Address" name="Address" placeholder="Your Address..">
+
+     <label for="Issue">Issue</label>
+    <select id="Issue" name="Issue">
+      <option value="Bones">Orthopaedics</option>
+      <option value="Muscle">Neurology</option>
+      <option value="Dental">Oncology</option>
+      <option value="Dental">Cardiology</option>
+      <option value="Dental">Nephrology and Urology</option>
+      <option value="Dental">Gastroenterology</option>
+
+    </select>
+    <label for="Bed">Bed Required</label>
+    <select id="Bed" name="Bed Required">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+    <label for="Bed">Bed Type</label>
+    <select id="Bed Type" name="Bed Type">  
+      <option value="Luxury">Luxury Rs.5000/per night</option>
+      <option value="Single">Single Bed Rs.3000/per night</option>
+      <option value="Double">Double Bed Rs.2000/per night</option>
+      <option value="Four">Four Bed Rs.1500/per night</option>
+      <option value="Eight">Eight Bed Rs.1000/per night</option>
+      <option value="General">General Ward Rs.500/per night</option>
+    </select>
+    <label for="Explain">Explain Your Issue</label>
+    <textarea id="subject" name="subject" placeholder="Explain Your Issue.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

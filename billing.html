@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+.bgimg {
+  background-image: url('background4.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<div class="bgimg">
+<body>
+
+  <form action="staff.html">
+    <div class="container">
+      <h1>Patient Detail</h1>
+      <hr>
+      <label for="PID"><b>Patient Id : </b></label>
+      <output type="text" placeholder="Patient Id" name="PID" required></output>
+      <br><br>
+      <label for="PName"><b>Patient Name : </b></label>
+      <output type="text" placeholder="Patient Name" name="PName" required></output>
+      <br><br>
+      <label for="PAge"><b>Patient Age : </b></label>
+      <output type="text" placeholder="Patient Age" name="PAge" required></output>
+      <br><br>
+      <label for="Bed"><b>Bed No. : </b></label>
+      <output type="text" placeholder="Bed No." name="Bed" required></output>
+      <br><br>
+      <label for="Days"><b>Days Spent : </b></label>
+      <output type="text" placeholder="Days" name="Days" required></output>
+      <br><br>
+      <label for="Care"><b>Care Cost : </b></label>
+      <output type="text" placeholder="CareC" name="Care" required></output>
+      <br><br>
+      <label for="Bed Cost"><b>Total Bed Cost : </b></label>
+      <output type="text" placeholder="BedC" name="Bed Cost" required></output>
+      <br><br>
+      <label for="Tax"><b>Total Taxes : </b></label>
+      <output type="text" placeholder="Taxes" name="Tax" required></output>
+      <br><br>
+      <label for="Full"><b>Total Amount to be Paid : </b></label>
+      <output type="text" placeholder="Full" name="Full" required></output>
+      <br><br>
+
+      <div class="clearfix">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="request">Print</button></a>
+      <div class="clearfix">
+        <a href="staff.html"><button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Go Back</button></a>
+      </div>
+    </div>
+  </form>
+
+</body>
+</div>
+</html>
